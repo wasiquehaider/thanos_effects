@@ -1,0 +1,101 @@
+.infinity {
+  position: absolute;
+  top: 0;
+  left: -12px;
+  height: 80px;
+  width: 80px;
+  transition: all 0.5s ease-in-out;
+  user-select: none;
+  -moz-user-select: none;
+}
+.timeinfinity {
+  position: absolute;
+  top: 0;
+  right: -12px;
+  height: 80px;
+  width: 80px;
+  transition: all 0.5s ease-in-out;
+  user-select: none;
+  -moz-user-select: none;
+}
+
+.glow-div {
+  position: absolute;
+  opacity: 100%;
+  height: 80px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.glow-div:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 170px rgba(0, 194, 45, 0.56);
+  background: radial-gradient(#00c22d8f, #ffffff);
+}
+.time-div {
+  position: absolute;
+  opacity: 100%;
+  height: 80px;
+  width: 60px;
+  border-radius: 50%;
+  right: 0;
+}
+
+.time-div:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 170px rgba(0, 194, 45, 0.56);
+  background: radial-gradient(#00c22d8f, #ffffff);
+}
+
+.snap {
+  position: absolute;
+  top: 0;
+  left: -12px;
+  height: 80px;
+  width: 80px;
+  background-image: url("https://www.google.com/logos/fnbx/thanos/thanos_snap.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  animation: snaps 1s steps(47);
+}
+
+.time {
+  position: absolute;
+  top: 0;
+  right: -12px;
+  height: 80px;
+  width: 80px;
+  background-image: url("https://www.google.com/logos/fnbx/thanos/thanos_time.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  animation: reversesnaps 1s steps(47);
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes snaps {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+@keyframes reversesnaps {
+  from {
+    background-position: right;
+  }
+  to {
+    background-position: left;
+  }
+}
+
+/* SPRITES */
+
+/* #image {
+  width: 34.7px;
+  height: 100px;
+  background: url("images/spiderman.PNG") 0px 0px;
+} */
